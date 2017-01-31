@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.InputStream;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList <String> pokeName = new ArrayList<String >();
 
-    int chosenPoke=0;
+    int randChosenPokemon=0;
 
     int rLength = 0;
 
@@ -36,7 +37,15 @@ public class MainActivity extends AppCompatActivity {
 
     String tempPoke = null;
 
+    int chosenPokemon = 0;
+
     ImageView imageView;
+
+    Button b1,b2,b3,b4;
+
+    ArrayList<Integer> randomPokeButtons = new ArrayList<Integer>();
+
+    Random random;
 
     public class ImageDownloader extends AsyncTask<String,Void,Bitmap>{
 
@@ -158,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
             }
             int i  = splitResult.length;
            // System.out.println(pokeURL.get(0));
@@ -172,10 +182,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
  */
-            Random random = new Random();
-            chosenPoke = random.nextInt(pokeURL.size());
 
-
+            b1= (Button) findViewById(R.id.b1);
+            chosenPokemon = getRandomPokemon();
 
 
             imageView = (ImageView) findViewById(R.id.imageView);
@@ -184,9 +193,12 @@ public class MainActivity extends AppCompatActivity {
             try {
 
                 Log.i("Getting image","Downloading");
-                pokeImage = imageTask.execute(pokeURL.get(chosenPoke)).get();
+                pokeImage = imageTask.execute(pokeURL.get(chosenPokemon)).get();
                 Log.i("Image has been","Downloaded");
                 imageView.setImageBitmap(pokeImage);
+                addButtonText();
+
+
 
             }
             catch (Exception e) {
@@ -203,6 +215,53 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+    public int getRandomPokemon()  {
+
+        random = new Random();
+
+        randChosenPokemon = random.nextInt(pokeURL.size());
+
+        return randChosenPokemon;
+    }
+
+
+
+    public void addButtonText() {
+
+
+
+        randomPokeButtons.clear();
+        b1 = (Button) findViewById(R.id.b1);
+        b2 = (Button) findViewById(R.id.b2);
+        b3 = (Button) findViewById(R.id.b3);
+        b4 = (Button) findViewById(R.id.b4);
+
+
+
+
+        for(int i= 0;i<4;i++)
+        {
+            randomPokeButtons.add(i,getRandomPokemon());
+
+        }
+
+        int setRandom = random.nextInt(4);
+        Log.i("Random Pokemon set at",Integer.toString(setRandom));
+        randomPokeButtons.set(setRandom,chosenPokemon);
+        b1.setText((pokeName.get(randomPokeButtons.get(0))));
+        b2.setText(pokeName.get(randomPokeButtons.get(1)));
+        b3.setText(pokeName.get(randomPokeButtons.get(2)));
+        b4.setText(pokeName.get(randomPokeButtons.get(3)));
+
+
+
+    }
+
+
+
+
 
 
     @Override
