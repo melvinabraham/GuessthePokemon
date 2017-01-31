@@ -2,10 +2,12 @@ package com.mapps.guessthepokemon;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.icu.lang.UCharacterEnums;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     String tempPoke = null;
 
+    ImageView imageView;
 
     public class ImageDownloader extends AsyncTask<String,Void,Bitmap>{
 
@@ -75,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public class DownloadTask extends AsyncTask< String,Void,String >  {
+
+
         @Override
         protected String doInBackground(String... urls) {
 
@@ -124,10 +129,16 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result) {
 
             //System.out.println(result);
+
+
             String [] splitResult = result.split("<div class=\"navigation js-simple-paginator\">");
             //System.out.println(splitResult[1]);
+
+
            Pattern p = Pattern.compile("img src=\"(.*?)\"");        //!!~~~~~~!! HAVE TO CHANGE THIS
            Matcher m = p.matcher(splitResult[1]);
+
+
             while (m.find())    {
 
                 //pokeURL.add(m.group(1));
@@ -140,10 +151,18 @@ public class MainActivity extends AppCompatActivity {
 
                 tempPoke  = m.group(1).substring(lLength+1,rLength+1);
 
-                System.out.println(tempPoke);
+                //System.out.println(tempPoke);
+
+                pokeURL.add(m.group(1));
+                pokeName.add(tempPoke);
+
+
 
             }
             int i  = splitResult.length;
+           // System.out.println(pokeURL.get(0));
+           // System.out.println(pokeName.get(0));
+
             /*
             p = Pattern.compile("img src=\"(.*?)\"");       // !!~~~~!! HAVE TO CHANGE THIS
             m = p.matcher(splitResult[1]);
@@ -152,22 +171,33 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(m.group(1));
             }
 
+ */
             Random random = new Random();
-            //chosenPoke = random.nextInt(pokeURL.size());
-            */
+            chosenPoke = random.nextInt(pokeURL.size());
 
+
+
+
+            imageView = (ImageView) findViewById(R.id.imageView);
             ImageDownloader imageTask = new ImageDownloader();
             Bitmap pokeImage;
-            /*
             try {
+
+                Log.i("Getting image","Downloading");
                 pokeImage = imageTask.execute(pokeURL.get(chosenPoke)).get();
-
-            } catch (Exception e) {
-
-                e.printStackTrace();
+                Log.i("Image has been","Downloaded");
+                imageView.setImageBitmap(pokeImage);
 
             }
-            */
+            catch (Exception e) {
+
+               e.printStackTrace();
+            }
+
+
+
+
+
 
         }
 
