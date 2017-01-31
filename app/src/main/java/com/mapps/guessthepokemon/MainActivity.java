@@ -10,8 +10,16 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.AsynchronousCloseException;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    ArrayList <String> pokeURL = new ArrayList<String >();
+
+    ArrayList <String> pokeName = new ArrayList<String >();
 
     public class DownloadTask extends AsyncTask< String,Void,String >  {
         @Override
@@ -62,7 +70,16 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
 
-           System.out.println(result);
+            //System.out.println(result);
+            String [] splitResult = result.split("<div class=\"navigation js-simple-paginator\">");
+            //System.out.println(splitResult[1]);
+           Pattern p = Pattern.compile("img src=\"(.*?)\"");
+           Matcher m = p.matcher(splitResult[1]);
+            while (m.find())    {
+
+                //pokeURL.add(m.group(1));
+                System.out.println(m.group(1));
+            }
 
         }
 
@@ -84,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
            // Log.i("URL : ",result);
 
-            downloadTask.execute("http://www.google.co.in");
-
+            downloadTask.execute("http://www.giantbomb.com/profile/wakka/lists/the-150-original-pokemon/59579/");
+            Log.i("","!!!!!!!!!!!!!!!!!!!!!!!!     DONE         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
         }
 
@@ -93,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
             e.printStackTrace();
             Log.i("Not","Working");
+
         }
 
 
