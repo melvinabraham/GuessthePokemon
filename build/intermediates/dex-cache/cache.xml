@@ -21,24 +21,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_1ca5f5a0270949b324215f302b47a88cfa42d040/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7262536a1f2f3876130255af5d7ced616d19a405/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -61,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="37663e697ef18557e6cb6e4c54f62d7df498027c">
+        sha1="bc17012293c4679ac6baf5dac26b853f00d697e0">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f787ca7eaf8d42733c72ca4e0a84d263957cc6/classes.dex" />
     </item>
     <item
@@ -84,24 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="762a57098117a61fd99b890b244213f45b20a9c1">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7e96840263644c891f009625b885828e7b807a46/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_aa86b98f1afb1596befe137f48fe13c83af3df5d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -115,35 +79,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="445d0aeaa24e5390ef530a554c54a4e983c2be9d">
+        sha1="fec97000dc838af6f4b5d495ad0923e81ff83b76">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_98a0d0206b2127c054e5360eef7f8ab99fa4013c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d71015116189f0cfc2afe01c0e03d326bb3c836d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_0d3ea2d6e7279d7d0ac145a56265a6af87c6b5d9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_846e4245665c8a9d66eeac15825bc2442f5f6704/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,57 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_c6e345fa882191ea0c109f323d5de960ede3d45e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_0d97108bebcc9c10b21e6c45cafb8bcd3772c233/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_1907657c89b2c18a8f1a6b985dfaae49db283e35/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/melvin/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_339604f8b89b579e9582656af054f05dcf2f79d9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6a73d300eac70839d878dec9bdafd47f6b834466">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6c47dc238b61840bd275553bed635fd1a985f194/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_5d5b35fdc25374b4cc5a7238964194fb5d2ecb2d/classes.dex" />
+        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_339604f8b89b579e9582656af054f05dcf2f79d9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,39 +120,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c3e881a071f5eb563f1439cbe0283a279d4e61ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_8357fb972c0ad136d6f959e5a84eee53fd753199/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_8c94cc160816ea7791009ee4aa33107c5c083348/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_6fb59203c2b6c058d3da4a686724e55b06c20a96/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -288,15 +153,6 @@
         revision="25.0.2"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_fb35d632c6929594a695f536acf2e7efa0f7fd46/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/melvin/Desktop/projects/AndroidApps/test/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_708713c3313c41238c2d32ad4d058669da2027a4/classes.dex" />
     </item>
 
 </items>

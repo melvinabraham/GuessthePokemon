@@ -7,8 +7,10 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Integer> randomPokeButtons = new ArrayList<Integer>();
 
     Random random;
+
+    int chosenPokemonPosition =0;
 
     public class ImageDownloader extends AsyncTask<String,Void,Bitmap>{
 
@@ -184,6 +188,10 @@ public class MainActivity extends AppCompatActivity {
  */
 
             b1= (Button) findViewById(R.id.b1);
+            b2= (Button) findViewById(R.id.b2);
+            b3= (Button) findViewById(R.id.b3);
+            b4= (Button) findViewById(R.id.b4);
+
             chosenPokemon = getRandomPokemon();
 
 
@@ -197,7 +205,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("Image has been","Downloaded");
                 imageView.setImageBitmap(pokeImage);
                 addButtonText();
-
 
 
             }
@@ -228,6 +235,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     public void addButtonText() {
 
 
@@ -247,15 +256,42 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        int setRandom = random.nextInt(4);
-        Log.i("Random Pokemon set at",Integer.toString(setRandom));
-        randomPokeButtons.set(setRandom,chosenPokemon);
+        chosenPokemonPosition = random.nextInt(4);
+        Log.i("Random Pokemon set at",Integer.toString((chosenPokemonPosition+1)));
+        randomPokeButtons.set(chosenPokemonPosition,chosenPokemon);
         b1.setText((pokeName.get(randomPokeButtons.get(0))));
         b2.setText(pokeName.get(randomPokeButtons.get(1)));
         b3.setText(pokeName.get(randomPokeButtons.get(2)));
         b4.setText(pokeName.get(randomPokeButtons.get(3)));
 
 
+
+    }
+
+    public void onSelectButton(View view)    {
+
+        b1= (Button) findViewById(R.id.b1);
+        b2= (Button) findViewById(R.id.b2);
+        b3= (Button) findViewById(R.id.b3);
+        b4= (Button) findViewById(R.id.b4);
+
+        int clickedButton = Integer.valueOf(view.getTag().toString());
+        Log.i("value",Integer.toString(clickedButton));
+        Log.i("Correct Position: ",Integer.toString(chosenPokemonPosition));
+
+        if (clickedButton == chosenPokemonPosition)
+        {
+
+            Log.i("C-","-ORRECT");
+            Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT).show();
+
+        }
+
+        else {
+
+            Log.i("INC-","-ORRECT");
+            Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
