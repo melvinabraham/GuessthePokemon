@@ -173,45 +173,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-            int i  = splitResult.length;
-           // System.out.println(pokeURL.get(0));
-           // System.out.println(pokeName.get(0));
 
-            /*
-            p = Pattern.compile("img src=\"(.*?)\"");       // !!~~~~!! HAVE TO CHANGE THIS
-            m = p.matcher(splitResult[1]);
-            while (m.find())    {
-                //pokeName.add(m.group(1));
-                System.out.println(m.group(1));
-            }
-
- */
-
-            b1= (Button) findViewById(R.id.b1);
-            b2= (Button) findViewById(R.id.b2);
-            b3= (Button) findViewById(R.id.b3);
-            b4= (Button) findViewById(R.id.b4);
-
-            chosenPokemon = getRandomPokemon();
-
-
-            imageView = (ImageView) findViewById(R.id.imageView);
-            ImageDownloader imageTask = new ImageDownloader();
-            Bitmap pokeImage;
-            try {
-
-                Log.i("Getting image","Downloading");
-                pokeImage = imageTask.execute(pokeURL.get(chosenPokemon)).get();
-                Log.i("Image has been","Downloaded");
-                imageView.setImageBitmap(pokeImage);
-                addButtonText();
-
-
-            }
-            catch (Exception e) {
-
-               e.printStackTrace();
-            }
+           newQuestion();
 
 
 
@@ -292,10 +255,39 @@ public class MainActivity extends AppCompatActivity {
             Log.i("INC-","-ORRECT");
             Toast.makeText(getApplicationContext(), "Incorrect!", Toast.LENGTH_SHORT).show();
         }
+        newQuestion();
 
     }
 
 
+    public void newQuestion()  {
+
+        chosenPokemon = getRandomPokemon();
+
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+        ImageDownloader imageTask = new ImageDownloader();
+        Bitmap pokeImage;
+        try {
+
+            Log.i("Getting image","Downloading");
+            pokeImage = imageTask.execute(pokeURL.get(chosenPokemon)).get();
+            Log.i("Image has been","Downloaded");
+            imageView.setImageBitmap(pokeImage);
+            addButtonText();
+
+
+        }
+        catch (Exception e) {
+
+            e.printStackTrace();
+        }
+
+
+
+
+
+    }
 
 
 
