@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_f1d8fe7c3f9976e34a3923487e431d7b40130fff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -18,6 +27,15 @@
         revision="25.0.2"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_da54238686b23cd32282201e9cd7b6a5be695d1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_edf1f5ad291fd87e459e3fd1022a854c5806fa15/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,11 +57,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/melvin/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_339604f8b89b579e9582656af054f05dcf2f79d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="bc17012293c4679ac6baf5dac26b853f00d697e0">
+        sha1="8c0176e29220acc4ff205d055e90462224913fb2">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b9f787ca7eaf8d42733c72ca4e0a84d263957cc6/classes.dex" />
     </item>
     <item
@@ -79,35 +106,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fec97000dc838af6f4b5d495ad0923e81ff83b76">
+        sha1="1631acf43ea1ef3d892648792a45603063fff06d">
         <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_98a0d0206b2127c054e5360eef7f8ab99fa4013c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_f1d8fe7c3f9976e34a3923487e431d7b40130fff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Desktop/projects/Poke/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_edf1f5ad291fd87e459e3fd1022a854c5806fa15/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/melvin/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/melvin/Desktop/projects/Poke/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_339604f8b89b579e9582656af054f05dcf2f79d9/classes.dex" />
     </item>
     <item
         is-multidex="true"
