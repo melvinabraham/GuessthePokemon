@@ -1,5 +1,6 @@
 package com.mapps.guessthepokemon;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.icu.lang.UCharacterEnums;
@@ -25,6 +26,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
+
+    String resultfromSplash =null;
 
 
     ArrayList <String> pokeURL = new ArrayList<String >();
@@ -84,7 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+   // !!!!!!     THIS METHOD WAS USED BEFORE IMPLEMENTING SPALSH SCREEN !!!!!!!!!!!
 
+
+/*
 
 
 
@@ -183,6 +189,43 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+
+    }
+
+    */
+
+
+
+    // !!!!!!     THE ABOVE METHOD WAS USED BEFORE IMPLEMENTING SPALSH SCREEN !!!!!!!!!!!
+
+
+    public void addNameandURL() {
+
+
+        String [] splitResult = resultfromSplash.split("<div class=\"navigation js-simple-paginator\">");
+
+        Pattern p = Pattern.compile("img src=\"(.*?)\"");
+        Matcher m = p.matcher(splitResult[1]);
+        while (m.find())        {
+
+            //pokeURL.add(m.group(1));
+            rLength = m.group(1).length() -5;
+            lLength = rLength;
+            while (m.group(1).charAt(lLength) >= 'a' && m.group(1).charAt(lLength) <= 'z')
+            {
+                --lLength;
+            }
+
+            tempPoke  = m.group(1).substring(lLength+1,rLength+1);
+
+            //System.out.println(tempPoke);
+
+            pokeURL.add(m.group(1));
+            pokeName.add(tempPoke);
+
+
+
+        }
 
     }
 
@@ -297,8 +340,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DownloadTask downloadTask = new DownloadTask();
-        String result = null;
+        Intent intent = getIntent();
+        Log.i("Back","here");
+        resultfromSplash = intent.getStringExtra("Website");
+        addNameandURL();
+        newQuestion();
+
+
+        //DownloadTask downloadTask = new DownloadTask();
+        //String result = null;
+        /*
         try {
 
 
@@ -317,6 +368,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Not","Working");
 
         }
+        */
 
 
     }
