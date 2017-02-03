@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e586f37013a512255ed473f411871f995ca65485">
+        sha1="652d699fa8c903eb9d2dcf2fe668dc312682d89f">
         <dex dex="/home/melvin/Desktop/projects/Poke/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7b85f793fefaa4203554d18d808295a5a5a12ce2/classes.dex" />
     </item>
     <item
@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="066ef572ccc197e92f597bfb8c4713294be5dc1e">
+        sha1="c8ccfcb2f23e00dd394a93724b62d3faa5a8fff4">
         <dex dex="/home/melvin/Desktop/projects/Poke/GuessthePokemon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_45084571d49ca999a4c7804901caccea1208384d/classes.dex" />
     </item>
     <item

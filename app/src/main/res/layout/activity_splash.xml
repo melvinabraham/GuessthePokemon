@@ -9,13 +9,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash_screen"
     tools:context="com.mapps.guessthepokemon.Splash">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@color/colorPrimary"
-        android:layout_centerVertical="true"
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/imageView2" />
+        android:layout_marginBottom="78dp"
+        android:id="@+id/progressBar" />
 </RelativeLayout>
